@@ -3,13 +3,6 @@
 <head>
     <title>TeleTest</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        function pageswitch() {
-            var pagename = document.getElementById("pagenumber");
-            var inp = pagename.value;
-            location.href = "http://google.com"
-            }
-    </script>
 </head>
 <body>
     <div class="ttestcontent">
@@ -65,11 +58,19 @@
         </ul>
     
         <p>Pages will be numbered depending upon order of addition. The first page would be 001, next would be 002, and so on.</p> 
+        <script type="text/javascript">
+            function pageswitch() {
+                var pagename = document.getElementById("pagenumber");
+                var inp = pagename.value;
+                document.location.href = inp+".html"
+                }
+        </script>
         <form>
             <label for="pagenumber">Go to page number</label><br>
-            <input style="background-color: black; color: white;" id="pagenumber" type="text"><br>
-            <input id="accept" type="submit" onclick = "pageswitch()">
+            <input style="background-color: black; color: white; border: solid; border-color: white;" id="pagenumber" type="text">
+            
         </form>
+        <button style="border: solid; border-color: white; background-color: black; color: white;" onclick="pageswitch()">Switch to Page</button>
     </div>
     
 </body>
