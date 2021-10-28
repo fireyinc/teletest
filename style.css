@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Teletext';
+    src: url('TeletestItems/Fonts/Teletext-regular.woff2') format('woff2'),
+        url('TeletestItems/Fonts/Teletext-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+html, body{
+    background-color: black;
+    color: white;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+}
+
+pre{
+    margin: 0 0;
+    padding: 0 0;
+    
+}
+
+p, label, input, li, ul{
+    font-family: "Teletext";
+    font-size: 20pt;
+    
+}
+
+ul{
+    list-style-type: square;
+}

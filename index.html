@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeleTest</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function pageswitch() {
+            var pagename = document.getElementById("pagenumber");
+            var inp = pagename.value;
+            location.href = "http://google.com"
+            }
+    </script>
+</head>
+<body>
+    <div class="ttestcontent">
+        <pre>
+            ██████████████████████          ██████████████████           ██                           ██████████████████
+                      ██                    ██                           ██                           ██
+                      ██                    ██                           ██                           ██
+                      ██                    ██                           ██                           ██
+                      ██                    ██                           ██                           ██
+                      ██                    ██████████                   ██                           ██████████
+                      ██                    ██                           ██                           ██
+                      ██                    ██                           ██                           ██
+                      ██                    ██                           ██                           ██
+                      ██                    ██████████████████           ██████████████████           ██████████████████               
+            
+        </pre>
+        <pre>
+            ██████████████████████          ██████████████████           ██████████████████           ████████████████████
+                      ██                    ██                           ██                                    ██
+                      ██                    ██                           ██                                    ██
+                      ██                    ██                           ██                                    ██
+                      ██                    ██                           ██████████████████                    ██
+                      ██                    ██████████                                   ██                    ██
+                      ██                    ██                                           ██                    ██
+                      ██                    ██                                           ██                    ██
+                      ██                    ██                                           ██                    ██
+                      ██                    ██████████████████           ██████████████████                    ██               
+            
+        </pre>
+        <pre>
+            ██████████████████████          ██████████████████           ████████████████████                 ██████
+            ██                  ██          ██                                    ██                        ████  ████
+            ██                  ██          ██                                    ██                      ████      ████
+            ██                  ██          ██                                    ██                    ██              ██
+            ████████████████████            ██                                    ██                    ██              ██
+            ████████████████████            ██████████                            ██                    ██              ██
+            ██                  ██          ██                                    ██                    ██████████████████
+            ██                  ██          ██                                    ██                    ██              ██  
+            ██                  ██          ██                                    ██                    ██              ██
+            ██████████████████████          ██████████████████                    ██                    ██              ██
+            
+        </pre>
+    
+    
+        <p>Welcome to TeleTest!</p>
+        <p>TeleTest is a site which tries to recreate the classic teletext look, but with more modern technology. No telly required either!</p>
+        <br>
+    
+        <p>Teletest pages can be requested to be added. Art for things like buttons have to look like something straight out of Teletext.</p>
+        <ul>
+            <li>No more than 7 colors</li>
+            <li>Cannot be HD</li>
+        </ul>
+    
+        <p>Pages will be numbered depending upon order of addition. The first page would be 001, next would be 002, and so on.</p> 
+        <form>
+            <label for="pagenumber">Go to page number</label><br>
+            <input style="background-color: black; color: white;" id="pagenumber" type="text"><br>
+            <input id="accept" type="submit" onclick = "pageswitch()">
+        </form>
+    </div>
+    
+</body>
+</html>
