@@ -11,12 +11,21 @@ html, body{
     background-color: black;
     color: white;
     font-smooth: never;
+    
     -webkit-font-smoothing : none;
+    margin: 0;
+    padding: 0;
+}
+
+
+img{
+    image-rendering: crisp-edges;
 }
 
 pre{
     margin: 0 0;
     padding: 0 0;
+    
     
 }
 
@@ -24,6 +33,24 @@ p, label, input, li, ul, button{
     font-family: "Teletext";
     font-size: 20pt;
     
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Teletext";
+}
+
+.ttebox{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: cornflowerblue;
+    vertical-align: 0px;
 }
 
 ul{

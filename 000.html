@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeleTest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ttestcontent">
+        <div class="header">
+            <img style="height: 80px;" src="TeletestItems/images/teletestlogo.png">
+            <label style="margin-top: 20px;" for="pagenumber" class="ttebox">TTE</label>
+            <input class="ttebox" maxlength="3" style="background-color: black; color: white; border: solid; border-color: white;" id="pagenumber" type="text">
+            <button class="ttebox" style="border: solid; border-color: white; background-color: black; color: white;" onclick="pageswitch()">Switch</button> 
+        </div>
+        <h1>Welcome to the Teletest Service!</h1>
+        <h2>This is the first broadcast ever here, and this is also the first PAGE on the Teletest service!</h2>
+        <h2>Let's get to the kinds of content you'll see here on page TTE000!</h2>
+
+        <pre>
+            █████████████████████████████████████████████████████████████████████████████████████████████████████████████
+            █                                                                                                           █
+            █                                             Current Happenings                                            █
+            █                                                                                                           █
+            █                                    It's the iPod's 20th Anniversary today!                                █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █                                                                                                           █
+            █████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                           
+        </pre>
+        
+        
+
+        
+        
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript">
+            function pageswitch() {
+                var pagename = document.getElementById("pagenumber");
+                var inp = pagename.value;
+                document.location.href = inp+".html"
+                }
+        </script>
+        
+            
+        
+        
+    </div>
+    
+</body>
+</html>
