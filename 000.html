@@ -3,6 +3,7 @@
 <head>
     <title>TeleTest</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="ttestcontent">
@@ -11,53 +12,65 @@
             <label style="margin-top: 3px;" for="pagenumber" class="ttebox">TTX</label>
             <input class="ttebox" maxlength="3" style="background-color: black; color: white; border: solid; border-color: rgb(0, 0, 0);" id="pagenumber" type="text">
             <button class="ttebox" style="border: solid; border-color: rgb(0, 0, 0); background-color: black; color: white;" onclick="pageswitch()">Switch</button> 
-        </div>
-        <h1>Welcome to the Teletest Service!</h1>
-        <h2>This is the first broadcast ever here, and this is also the first PAGE on the Teletest service!</h2>
-        <h2>Let's get to the kinds of content you'll see here on page TTE000!</h2>
-
-        <pre>
-            █████████████████████████████████████████████████████████████████████████████████████████████████████████████
-            █                                                                                                           █
-            █                                             Current Happenings                                            █
-            █                                                                                                           █
-            █                                    It's the iPod's 20th Anniversary today!                                █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █                                                                                                           █
-            █████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                           
-        </pre>
-        
-        
-
-        
-        
+    </div>
 
 
+    <script type="text/javascript">
+        function pageswitch() {
+            var pagename = document.getElementById("pagenumber");
+            var inp = pagename.value;
+            document.location.href = inp+".html"
+        }
+    </script>
+    <div style="text-align: center;">
+        <canvas style="border:none;" id="myCanvas" width="229" height="190" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+            
+        <script>
 
+            /** @type {HTMLCanvasElement} */
+            const c = document.getElementById('canvas');
 
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.rect(20, 20, 150, 100);
+            ctx.fillStyle = "red";
+            ctx.fill();
+            
+            ctx.beginPath();
+            ctx.rect(40, 40, 150, 100);
+            ctx.fillStyle = "blue";
+            ctx.fill();
+    
+            ctx.beginPath();
+            ctx.rect(60, 60, 150, 100);
+            ctx.fillStyle = "green";
+            ctx.fill();
+    
+            ctx.beginPath();
+            ctx.rect(130, 80, 80, 20);
+            ctx.fillStyle = "black";
+            ctx.fill();
+    
+            ctx.beginPath();
+            ctx.rect(160, 80, 20, 80);
+            ctx.fillStyle = "black";
+            ctx.fill();
+    
+            ctx.font = "30px Teletext";
+            ctx.fillStyle = "white";
+            ctx.fillText("Teletext HTM", 20, 180);
 
-
-
-
-
-        <script type="text/javascript">
-            function pageswitch() {
-                var pagename = document.getElementById("pagenumber");
-                var inp = pagename.value;
-                document.location.href = inp+".html"
-                }
-        </script>
+            
+        </script> 
+    
+        <h1>Say hello to Teletext HTM!</h1>  
+        <h2>This is the first broadcast on this platform!</h2> 
+        <h2>Without further ado, let's get into the content!</h2>
+    </div>
+   
         
             
         
