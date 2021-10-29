@@ -10,7 +10,7 @@
         <div class="header">
             <img style="height: 40px;" src="TeletestItems/images/teletestlogo.png">
             <label style="margin-top: 3px;" for="pagenumber" class="ttebox">TTX</label>
-            <input class="ttebox" maxlength="3" style="background-color: black; color: white; border: solid; border-color: rgb(0, 0, 0);" id="pagenumber" type="text">
+            <input placeholder="000" class="ttebox" maxlength="3" style="background-color: black; color: white; border: solid; border-color: rgb(0, 0, 0);" id="pagenumber" type="text">
             <button class="ttebox" style="border: solid; border-color: rgb(0, 0, 0); background-color: black; color: white;" onclick="pageswitch()">Switch</button> 
     </div>
 
@@ -27,55 +27,107 @@
             Your browser does not support the HTML5 canvas tag.
         </canvas>
             
-        <script>
+        
+    
 
-            /** @type {HTMLCanvasElement} */
-            const c = document.getElementById('canvas');
 
-            var c = document.getElementById("myCanvas");
-            var ctx = c.getContext("2d");
-            ctx.beginPath();
-            ctx.rect(20, 20, 150, 100);
-            ctx.fillStyle = "red";
-            ctx.fill();
-            
-            ctx.beginPath();
-            ctx.rect(40, 40, 150, 100);
-            ctx.fillStyle = "blue";
-            ctx.fill();
-    
-            ctx.beginPath();
-            ctx.rect(60, 60, 150, 100);
-            ctx.fillStyle = "green";
-            ctx.fill();
-    
-            ctx.beginPath();
-            ctx.rect(130, 80, 80, 20);
-            ctx.fillStyle = "black";
-            ctx.fill();
-    
-            ctx.beginPath();
-            ctx.rect(160, 80, 20, 80);
-            ctx.fillStyle = "black";
-            ctx.fill();
-    
-            ctx.font = "30px Teletext";
-            ctx.fillStyle = "white";
-            ctx.fillText("Teletext HTM", 20, 180);
 
-            
-        </script> 
-    
-        <h1>Say hello to Teletext HTM!</h1>  
+
+        <h1>Welcome to Teletext HTM!</h1>  
         <h2>This is the first broadcast on this platform!</h2> 
         <h2>Without further ado, let's get into the content!</h2>
+
+        <canvas id="ttxcontent" width="900" height="400" >
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+
+        
+    </div>     
     </div>
-   
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.rect(20, 20, 150, 100);
+        ctx.fillStyle = "red";
+        ctx.fill();
         
-            
-        
-        
-    </div>
+        ctx.beginPath();
+        ctx.rect(40, 40, 150, 100);
+        ctx.fillStyle = "blue";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(60, 60, 150, 100);
+        ctx.fillStyle = "green";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(130, 80, 80, 20);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(160, 80, 20, 80);
+        ctx.fillStyle = "black";
+        ctx.fill();
+
+        ctx.font = "30px Teletext";
+        ctx.fillStyle = "white";
+        ctx.fillText("Teletext HTM", 20, 180);
+    </script> 
     
+    <script>
+        /** @type {HTMLCanvasElement} */
+        var c = document.getElementById("ttxcontent");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Teletext";
+        ctx.fillStyle = "white";
+        ctx.fillText("Technology", 0, 15);
+        
+        ctx.moveTo(169, 0);
+        ctx.lineTo(900, 0);
+        ctx.lineWidth = 20;
+        ctx.strokeStyle = "white"
+        ctx.stroke();
+
+        ctx.moveTo(900, 0);
+        ctx.lineTo(900, 400);
+        ctx.lineWidth = 20;
+        ctx.strokeStyle = "white"
+        ctx.stroke();
+
+        ctx.moveTo(900, 400);
+        ctx.lineTo(0, 400);
+        ctx.lineWidth = 20;
+        ctx.strokeStyle = "white"
+        ctx.stroke();
+
+        ctx.moveTo(0, 400);
+        ctx.lineTo(0, 20);
+        ctx.lineWidth = 20;
+        ctx.strokeStyle = "white"
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.rect(375, (400/2)-(100/2), 150, 100);
+        ctx.lineWidth = 10;
+        ctx.fillStyle = "red";
+        ctx.fill();
+        
+        
+    </script>
+    <div style="background-color:red" >
+
+    </div>
+    <div style="background-color:red">
+
+    </div>
+    <div style="background-color:red">
+
+    </div>
+    <div style="background-color:red">
+
+    </div>
 </body>
 </html>
