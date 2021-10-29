@@ -41,13 +41,14 @@ h1, h2, h3, h4, h5, h6{
 
 .ttebox{
     display: inline-block;
-    margin-top: 20px;
+
     margin-left: 20px;
     vertical-align: top;
+
 }
 
 .header{
-    height: 80px;
+    height: 40px;
     width: 100%;
     background-color: cornflowerblue;
     vertical-align: 0px;
